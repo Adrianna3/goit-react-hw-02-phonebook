@@ -50,7 +50,7 @@ export class App extends Component {
     return (
       <div>
         <Section title="Phonebook">
-          <ContactForm newContact={this.addContact} />
+          <ContactForm addContact={this.addContact} />
         </Section>
 
         <Section title="Contacts">

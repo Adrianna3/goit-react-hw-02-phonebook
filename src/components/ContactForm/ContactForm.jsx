@@ -19,7 +19,7 @@ export class ContactForm extends Component {
 
   handleSubmit = evt => {
     evt.preventDefault();
-    this.props.newContact({ ...this.state });
+    this.props.addContact({ ...this.state });
     this.reset();
   };
 
@@ -73,5 +73,5 @@ export class ContactForm extends Component {
 }
 
 ContactForm.propTypes = {
-  newContact: PropTypes.func.isRequired,
+  addContact: PropTypes.func.isRequired,
 };
